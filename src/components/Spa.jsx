@@ -5,6 +5,7 @@ import SeedProcessor from "../components/seedProcessingPlant/SeedProcessor";
 import SeedProducer from "./seedProducer/SeedProducer";
 import SeedTester from "./seedTester/SeedTester";
 import SeedCertifier from "./SeedCertifier/SeedCertifier";
+import ViewData from "./ViewData/viewdata";
 
 const Spa = () => {
   const [seedGrower, setSeedGrower] = useState(true);
@@ -12,6 +13,8 @@ const Spa = () => {
   const [seedProducer, setSeedProducer] = useState(false);
   const [seedTester, setSeedTester] = useState(false);
   const [seedCertifier, setCertifier] = useState(false);
+  const [viewdata, setviewdata] = useState(false);
+
 
   const [displayDasboard, setdisplayDashboard] = useState(false);
   return (
@@ -122,6 +125,19 @@ const Spa = () => {
           >
             <h3>Seed Testing Agency</h3>
           </div>
+          <div
+            onClick={() => {
+              setSeedProcessor(false);
+              setSeedGrower(false);
+              setSeedProducer(false);
+              setCertifier(false);
+              setSeedTester(false);
+              setviewdata(true);
+            }}
+            className="option-list"
+          >
+            <h3>View Data</h3>
+          </div>
         </div>
       </div>
       <div className="rendered-component">
@@ -130,6 +146,8 @@ const Spa = () => {
         {seedProducer ? <SeedProducer /> : <div></div>}
         {seedTester ? <SeedTester /> : <div></div>}
         {seedCertifier ? <SeedCertifier/> : <div></div>}
+        {viewdata ? <ViewData/> : <div></div>}
+
 
       </div>
     </div>
