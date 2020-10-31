@@ -50,6 +50,8 @@ const Spa = () => {
               setCertifier(false);
               setSeedProducer(false);
               setSeedTester(false);
+              setviewdata(false);
+
             }}
           >
             <h1>Dashboard</h1>
@@ -73,6 +75,8 @@ const Spa = () => {
               setSeedProducer(false);
               setSeedTester(false);
               setCertifier(false);
+              setviewdata(false);
+
             }}
           >
             <h3>Seed Grower</h3>
@@ -84,6 +88,8 @@ const Spa = () => {
               setSeedProducer(false);
               setSeedTester(false);
               setCertifier(false);
+              setviewdata(false);
+
             }}
             className="option-list"
           >
@@ -96,6 +102,8 @@ const Spa = () => {
               setSeedProducer(true);
               setSeedTester(false);
               setCertifier(false);
+              setviewdata(false);
+
             }}
             className="option-list"
           >
@@ -108,6 +116,9 @@ const Spa = () => {
               setSeedProducer(false);
               setCertifier(true);
               setSeedTester(false);
+              setviewdata(false);
+
+
             }}
             className="option-list"
           >
@@ -120,6 +131,8 @@ const Spa = () => {
               setCertifier(false);
               setSeedProducer(false);
               setSeedTester(true);
+              setviewdata(false);
+
             }}
             className="option-list"
           >
